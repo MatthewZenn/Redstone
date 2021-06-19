@@ -7,6 +7,9 @@
 		},
 		{
 			"include": "#strings"
+		},
+		{
+			"include": "#constants"
 		}
 	],
 	"repository": {
@@ -24,6 +27,14 @@
 				{
 					"name": "constant.character.escape.block",
 					"match": "\\\\."
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.numeric.integer.block",
+					"match": "[0-9]"
 				}
 			]
 		}
