@@ -1,0 +1,7 @@
+# test script
+
+/execute @e[type=Zombie, r=10]
+
+/tp @p 178 143 23
+
+/setblock ~ ~ ~ minecraft: soul_sand
