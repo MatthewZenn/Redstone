@@ -18,7 +18,7 @@
         }],
         "grammars": [{
             "language": "block",
-            "scopeName": "text",
+            "scopeName": "text.block",
             "path": "./syntaxes/block.tmLanguage.json"
         }]
     }

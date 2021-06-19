@@ -10,14 +10,22 @@
 		},
 		{
 			"include": "#constants"
+		},
+		{
+			"include": "#supports"
+		},
+		{
+			"include": "#storages"
+		},
+		{
+			"include": "#comments"
 		}
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.block",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+			"name": "keyword.control.block",
+			"begin": "/",
+			"end": " "
 		},
 		"strings": {
 			"name": "string.quoted.double.block",
@@ -34,9 +42,30 @@
 			"patterns": [
 				{
 					"name": "constant.numeric.integer.block",
-					"match": "[0-9]"
+					"match": "[0-9]|~"
 				}
 			]
+		},
+		"supports": {
+			"patterns": [
+				{
+					"name": "entity.name.class",
+					"match": "minecraft:|="
+				}
+			]
+		},
+		"storages": {
+			"patterns": [
+				{
+					"name": "storage.type.cs",
+					"match": "@[a-z]|r|type"
+				}
+			]
+		},
+		"comments": {
+			"name": "comment.line.number-sign",
+			"begin": "#",
+			"end": "\n"
 		}
 	},
 	"scopeName": "text.block"
