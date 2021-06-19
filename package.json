@@ -1,0 +1,25 @@
+{
+    "name": "redstone",
+    "displayName": "Redstone",
+    "description": "VSCode language support for Command Block",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.57.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "block",
+            "aliases": ["Redstone", "block"],
+            "extensions": [".block"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "block",
+            "scopeName": "",
+            "path": "./syntaxes/block.tmLanguage.json"
+        }]
+    }
+}
